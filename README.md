@@ -13,6 +13,8 @@ go mod download
 If you have any questions:
 My contacts: tg: @rielexx, discord: darklexx_
 
+# Sign "+"  --> "p" (like in example)
+
 # Using examples:
  Send expression:
  ```bash
