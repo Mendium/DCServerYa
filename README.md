@@ -1,6 +1,6 @@
 # DCServer
  # Yandex Lyceum Project - Distributed Computing Server
-
+ ![Logo](https://github.com/Mendium/DCServerYa/blob/main/orig.png)
 
 ## Setup:
  (1) Install MINGW64 and set it to %PATH% (global variable):
