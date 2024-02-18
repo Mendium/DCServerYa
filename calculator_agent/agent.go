@@ -20,7 +20,7 @@ func AgentDo(input string, id int) error {
 	}
 	s := ""
 	for _, t := range postfixTokens {
-		s += t.GetValueWithoutType() + " "
+		s += t.Value.(string) + " "
 	}
 	tokens := strings.Fields(s)
 	stack := make([]int, 0)
