@@ -14,7 +14,7 @@ go mod download
 ```bash
 go env -w CGO_ENABLED=1
 ```
- (4): download this project (.zip), open in IDE (i recommend GoLand) and start the server (main.go).
+ (4): Download this project [(.zip)](https://github.com/Mendium/DCServerYa/archive/refs/heads/main.zip), open in IDE (I recommend GoLand) and start the server (main.go).
 
  (5): Send your first expression to server by cmd :)
 
