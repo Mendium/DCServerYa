@@ -7,7 +7,7 @@ import (
 	shuntingYard "github.com/mgenware/go-shunting-yard"
 	"strconv"
 	"strings"
-	"time"
+	"sync"
 )
 
 func AgentDo(input string, id int) error {
@@ -36,11 +36,13 @@ func AgentDo(input string, id int) error {
 			if len(stack) < 2 {
 				return fmt.Errorf("not enough operands for addition")
 			}
+			var wg sync.WaitGroup
 			b := stack[len(stack)-1]
 			a := stack[len(stack)-2]
 			stack = stack[:len(stack)-2]
-			time.Sleep(5*time.Second)
-			calculator_multi.Calculate(a, b, token, &stack)
+			wg.Add(1)
+			calculator_multi.Calculate(a, b, token, &stack, &wg)
+			wg.Wait()
 
 		default:
 			if token == " " {
