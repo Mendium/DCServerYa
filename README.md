@@ -41,5 +41,11 @@ Your expression has been calculated. Result: 0
 curl http://localhost:8080/operations
 ```
 
+## How to write negative numbers:
+```bash
+-3  ---> (0-1)
+-12 ---> (0-12)
+```
+
 # How does it works?
 ![Scheme](https://github.com/Mendium/DCServerYa/blob/main/info.png)
