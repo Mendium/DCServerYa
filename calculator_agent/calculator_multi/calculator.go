@@ -1,6 +1,11 @@
 package calculator_multi
 
-func Calculate(a, b int, op string, stack *[]int) {
+import (
+	"sync"
+)
+
+func Calculate(a, b int, op string, stack *[]int, wg *sync.WaitGroup) {
+	defer wg.Done()
 	switch op {
 	case "+":
 		*stack = append(*stack, a+b)
