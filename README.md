@@ -10,9 +10,13 @@
 ```bash
 go mod download
 ```
- (3): download this project and start the server.
+ (3) Update CGO:
+```bash
+go env -w CGO_ENABLED=1
+```
+ (4): download this project (.zip), open in IDE (i recommend GoLand) and start the server (main.go).
 
- (4): Send your first expression to server by cmd :)
+ (5): Send your first expression to server by cmd :)
 
 ## If you have any questions/problems:
 ## My contacts: tg: @rielexx, discord: darklexx_
