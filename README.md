@@ -2,8 +2,16 @@
  Yandex Lyceum Project - Distributed Computing Server
 
 # Setup:
+(1) Install MINGW64 and set it to %PATH% (global variable):
+(2) Install all dependencies:
+```bash
+go mod download
+```
+(3): download this project and start the server.
+(4): Send your first expression to server by cmd.
 
-
+If you have any questions:
+My contacts: tg: @rielexx, discord: darklexx_
 
 # Using examples:
  Send expression:
