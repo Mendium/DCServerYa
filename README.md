@@ -3,7 +3,7 @@
  ![Logo](https://github.com/Mendium/DCServerYa/blob/main/orig.png)
 
 ## Setup:
- (1) Install MINGW64 and set it to %PATH% (global variable):
+ (1) Install [MinGW64 by instruction](https://www.msys2.org/), and set it to %PATH% (global variable):
 
  (2) Install all dependencies:
 ```bash
