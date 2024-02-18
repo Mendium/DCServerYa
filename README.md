@@ -3,7 +3,8 @@
  ![Logo](https://github.com/Mendium/DCServerYa/blob/main/orig.png)
 
 ## Setup:
- (1) Install [MinGW64 by instruction](https://www.msys2.org/), and set it to %PATH% (global variable):
+ (1) Install [MinGW64 by instruction](https://www.msys2.org/), and set path (C:\msys64\mingw64\bin  -- by default) to %PATH% (global variable):
+ P/S: If folder /bin is empty download mingw64 and insert manually to this folder (or dm me).
 
  (2) Install all dependencies:
 ```bash
@@ -13,7 +14,7 @@ go mod download
 
  (4): Send your first expression to server by cmd :)
 
-## If you have any questions:
+## If you have any questions/problems:
 ## My contacts: tg: @rielexx, discord: darklexx_
 
 ## Sign "+"  --> "p" (like in example)
