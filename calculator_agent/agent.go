@@ -7,6 +7,7 @@ import (
 	shuntingYard "github.com/mgenware/go-shunting-yard"
 	"strconv"
 	"strings"
+	"time"
 )
 
 func AgentDo(input string, id int) error {
@@ -38,6 +39,7 @@ func AgentDo(input string, id int) error {
 			b := stack[len(stack)-1]
 			a := stack[len(stack)-2]
 			stack = stack[:len(stack)-2]
+			time.Sleep(5*time.Second)
 			calculator_multi.Calculate(a, b, token, &stack)
 
 		default:
