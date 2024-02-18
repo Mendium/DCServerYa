@@ -1,7 +1,8 @@
 # DCServer
  Yandex Lyceum Project - Distributed Computing Server
 
-Step 1:
+# Setup:
+
 
 
 # Using examples:
@@ -13,3 +14,5 @@ Step 1:
  ```bash
 curl http://localhost:8080/tasks?id=12
 ```
+# How does it works?
+![Scheme](https://github.com/Mendium/DCServerYa/blob/main/info.png)
