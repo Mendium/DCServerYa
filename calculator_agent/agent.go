@@ -20,7 +20,11 @@ func AgentDo(input string, id int) error {
 	}
 	s := ""
 	for _, t := range postfixTokens {
-		s += t.Value.(string) + " "
+		if str, ok := t.Value.(string); ok {
+			s += str + " "
+		} else {
+			s += strconv.Itoa(t.Value.(int)) + " "
+		}
 	}
 	tokens := strings.Fields(s)
 	stack := make([]int, 0)
